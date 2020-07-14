@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "push": "yarn build && yarn sync",
+    "sync": "aws s3 sync ./dist/amplify-app/ s3://schueler-20200714143954-hostingbucket-dev    --profile schueler-vz"
   },
   "private": true,
   "dependencies": {
@@ -19,9 +21,9 @@
     "@angular/platform-browser": "^7.2.0",
     "@angular/platform-browser-dynamic": "^7.2.0",
     "@angular/router": "^7.2.0",
-    "@aws-amplify/ui": "^1.0.18",
-    "aws-amplify": "^1.1.25",
-    "aws-amplify-angular": "^2.1.12",
+    "@aws-amplify/ui": "^2.0.2",
+    "aws-amplify": "^2.2.4",
+    "aws-amplify-angular": "^4.1.5",
     "core-js": "^2.5.4",
     "global": "^4.4.0",
     "graphql": "^14.2.1",
