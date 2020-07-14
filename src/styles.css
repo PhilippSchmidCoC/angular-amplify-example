@@ -1,6 +1,8 @@
 @import "~@aws-amplify/ui/src/Theme.css";
 @import "~@aws-amplify/ui/src/Angular.css";
 
-.active { 
+/* @import "./custom-tailwind/custom-utilities.css"; */
+
+.active {
   color: #ff0000;
 }
