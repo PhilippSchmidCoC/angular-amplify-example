@@ -2,22 +2,49 @@
 <div>
   <form [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
     <div>
-      <label>Title: </label>
-      <input type="text" formControlName="title" />
+      <label class="block uppercase font-bold text-sm text-dark-blue mx-4 mb-2"
+        >Title:
+      </label>
+      <input
+        type="text"
+        class="form-input form-element"
+        [ngClass]="{ 'border-red-600': control.invalid }"
+        formControlName="title"
+      />
     </div>
     <div>
-      <label>Description: </label>
-      <input type="text" formControlName="description" />
+      <label class="block uppercase font-bold text-sm text-dark-blue mx-4 mb-2"
+        >Description:
+      </label>
+      <input
+        type="text"
+        class="form-input form-element"
+        [ngClass]="{ 'border-red-600': control.invalid }"
+        type="text"
+        formControlName="description"
+      />
     </div>
     <div>
-      <label>status: </label>
-      <input type="text" formControlName="status" />
+      <label class="block uppercase font-bold text-sm text-dark-blue mx-4 mb-2"
+        >status:
+      </label>
+      <input
+        class="form-input form-element"
+        [ngClass]="{ 'border-red-600': control.invalid }"
+        type="text"
+        formControlName="status"
+      />
     </div>
-    <button type="submit">Submit</button>
+    <button
+      class=" bg-medium-blue text-white font-bold px-4 py-3"
+      type="submit"
+    >
+      Submit
+    </button>
   </form>
 </div>
 
-<h3>Tasks</h3>
+<h3 class="text-rosy-brown text-6xl	">Tasks</h3>
 <div>
   <span *ngIf="loading">Loading...</span>
   <div *ngFor="let task of tasks">
