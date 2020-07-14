@@ -1,0 +1,26 @@
+<h3>New Task</h3>
+<div>
+  <form [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+    <div>
+      <label>Title: </label>
+      <input type="text" formControlName="title" />
+    </div>
+    <div>
+      <label>Description: </label>
+      <input type="text" formControlName="description" />
+    </div>
+    <div>
+      <label>status: </label>
+      <input type="text" formControlName="status" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<h3>Tasks</h3>
+<div>
+  <span *ngIf="loading">Loading...</span>
+  <div *ngFor="let task of tasks">
+    {{ task.title }}
+  </div>
+</div>

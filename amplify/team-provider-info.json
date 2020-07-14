@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-schuelervz-dev-134449-authRole",
+            "UnauthRoleArn": "arn:aws:iam::770710496542:role/amplify-schuelervz-dev-134449-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::770710496542:role/amplify-schuelervz-dev-134449-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-schuelervz-dev-134449-deployment",
+            "UnauthRoleName": "amplify-schuelervz-dev-134449-unauthRole",
+            "StackName": "amplify-schuelervz-dev-134449",
+            "StackId": "arn:aws:cloudformation:eu-central-1:770710496542:stack/amplify-schuelervz-dev-134449/6e77f320-c5c7-11ea-9ff0-02508c92de46",
+            "AmplifyAppId": "d1cjgvzdbuchrf"
+        },
+        "categories": {
+            "auth": {
+                "schuelervzda0223d4": {}
+            }
+        }
+    }
+}
