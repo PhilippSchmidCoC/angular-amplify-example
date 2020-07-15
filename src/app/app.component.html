@@ -1,5 +1,7 @@
-<div>
-  <a [routerLink]="['login']" routerLinkActive="active">login</a> | 
-  <a [routerLink]="['home']" routerLinkActive="active">home</a>
+<div class="container mx-auto">
+  <div>
+    <a [routerLink]="['login']" routerLinkActive="active">login</a> |
+    <a [routerLink]="['home']" routerLinkActive="active">home</a>
+  </div>
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
