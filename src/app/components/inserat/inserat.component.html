@@ -1,3 +1,5 @@
+<h3 class="text-blue text-4xl	">Inserat</h3>
+
 <div>
   <form [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
     <div>
@@ -39,7 +41,7 @@
     </button>
   </form>
 </div>
-<h3 class="text-rosy-brown text-6xl	">Tasks</h3>
+<h3 class="text-blue text-4xl	">Tasks</h3>
 <div>
   <span *ngIf="loading">Loading...</span>
   <div *ngFor="let task of tasks">
