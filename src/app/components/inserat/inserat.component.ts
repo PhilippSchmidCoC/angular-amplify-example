@@ -1,20 +1,19 @@
 import { Component, OnInit } from "@angular/core";
 import { AmplifyService } from "aws-amplify-angular";
 import { API, graphqlOperation } from "aws-amplify";
-import { listTasks } from "../../graphql/queries";
-import { task } from "../types/task";
+import { listTasks } from "../../../graphql/queries";
+import { task } from "../../types/task";
 
 import * as Observable from "zen-observable";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { createTask } from "../../graphql/mutations";
-import { onCreateTask } from "../../graphql/subscriptions";
+import { createTask } from "../../../graphql/mutations";
+import { onCreateTask } from "../../../graphql/subscriptions";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  selector: "app-inserat",
+  templateUrl: "./inserat.component.html"
 })
-export class HomeComponent implements OnInit {
+export class InseratComponent implements OnInit {
   title = "amplify-app";
   tasks: Array<task>;
   loading = true;

@@ -1,0 +1,49 @@
+<header class="bg-white w-full sticky shadow">
+  <div class="container container--simple relative flex mx-12 items-center">
+    <a href="/" class=" h-12 ">
+      <img
+        aria-label="Wissensturbo Logo"
+        class="w-auto h-12 fill-current"
+        src="assets/logo.svg"
+      />
+    </a>
+    <nav class="flex items-center justify-between flex-wrap p-6 w-64">
+      <!-- <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 ">
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div> -->
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow w-full flex justify-between">
+          <a
+            [routerLink]="['login']"
+            routerLinkActive="active"
+            class="text-blue font-bold text-base py-3   hover:text-dark-gray"
+          >
+            Login
+          </a>
+          <a
+            [routerLink]="['home']"
+            routerLinkActive="active"
+            class="text-blue font-bold text-base py-3   hover:text-dark-gray"
+          >
+            Home
+          </a>
+          <a
+            href="#responsive-header"
+            class="text-blue font-bold text-base py-3   hover:text-dark-gray"
+          >
+            Blog
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
